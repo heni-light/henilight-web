@@ -1,32 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henok Brihanu | Portfolio</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+
         body {
-            background-color: #1a1a2e; 
-            color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1a252f);
+            color: #fff;
+            padding: 4rem 0;
             text-align: center;
-            padding: 50px;
         }
-        .box {
-            background-color: #16213e;
-            border: 2px solid #0f3460;
-            padding: 20px;
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            align="center";
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: -50px auto 40px auto;
+        }
+        section {
+            background: #fff;
+            padding: 40px;
+            margin-bottom: 30px;
             border-radius: 15px;
-            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        h1 { color: #e94560; }
-        a { color: #4db8ff; text-decoration: none; font-weight: bold; }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-top: 0;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 25px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            transform: translateY(-3px);
+            background: var(--accent-color);
+        }
+
+
+        .edu-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .edu-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-year {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container { width: 95%; }
+            header h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Henilight Web</h1>
-        <p>Welcome to my website!<p>
-        <p>This is the first website I have created as an IT student at the University of Wachemo።</p>
-        <hr>
-        <p>Stay tuned to see the projects I've worked on!</p>
+
+    <header>
+        <h1>Henok Brihanu</h1>
+     <p> IT second year Student at Wachemo University</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Henok Brihanu. I was born in Ethiopia, in the Central Ethiopian region, Hadiyya Zone, Misha Woreda, at Era gemedo kebale.
+                 Currently, I am a student at <strong>Wachemo University</strong>.
+ </p>
+            <p>
+                My life’s journey has been defined by a relentless pursuit of knowledge, a deep-seated commitment to my community, and an ever-growing passion for the transformative power of technology.
+                 I believe that our backgrounds shape our character, but our visions define our future.
+            </p>
+            <p>
+                I describe myself as a quiet individual who finds peace in reflection and productivity.
+                 While I value my solitude, I am deeply respectful and considerate. 
+                 I am a versatile and willing worker, ready to take on any challenge. 
+                 In my spare time, I am an avid reader, constantly seeking new perspectives through books.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Academic Background</h2>
+            
+            <div class="edu-item">
+                <span class="edu-year">Grades 1–8</span>
+                <p><strong>Era Gemedo Elementary School</strong><br>
+                Established a strong foundation and mastered subjects through diligence, curiosity, and family support.</p>
+            </div>
+
+            <div class="edu-item">
+                <span class="edu-year">Grades 9–11</span>
+                <p><strong>Homacho Secondary High School</strong><br>
+                Balanced academic responsibilities with household duties and community service at my church.</p>
+            </div>
+
+            <div class="edu-item">
+                <span class="edu-year">Grade 12</span>
+                <p><strong>Wachemo Secondary and Preparatory High School</strong><br>
+                Completed preparatory studies before transitioning to higher education.</p>
+            </div>
+
+            <div class="edu-item">
+                <span class="edu-year">Current</span>
+                <p><strong>Wachemo University</strong><br>
+                Pursuing a degree in Information Technology, focusing on digital integration and innovation.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>Database </li>
+                <li>C++</li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Video Editing (CapCut)</li>
+            </ul>
+        </section>
+
+        <section id="vision">
+            <h2>Vision for the Future</h2>
+            <p>My primary objective is to bridge the gap between technology and business through the following goals:</p>
+            <ul>
+                <li><strong>Establish a Technology-Driven Business:</strong> Creating ventures that leverage modern solutions to provide market value.</li>
+                <li><strong>Create Employment Opportunities:</strong> Building an organization that offers career paths for my community.</li>
+                <li><strong>Professional Software Development:</strong> Building high-grade applications that address real-world needs.</li>
+            </ul>
+        </section>
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+            from my beggining to my Current studies at Wachemo University,my path is one of continuous growth. <br>
+             I am committed to graduating and transitioning into the professionalworld as a Skilled IT expert and entrepreur.
+            </p>
+        </section>
+
+        <section id="contact" style="text-align: center;">
+            <h2>Get In Touch</h2>
+            <p>I am ready to contribute to the digital future and transition into the professional world as an IT expert.</p>
+            <a href="mailto:your-email@example.com" class="contact-btn">Send me an Email</a>
+            <p style="margin-top: 20px;">
+                GitHub:<a href="index.html" target="_blank">github.com/your-username</a>
+                GitHub:<a href="menu.html"  target="_blank">github.com/your-username</a>  
+            </p>
+        </section>
+
     </div>
+
+    <footer>
+        <p>Henok Brihanu. Built with focus and passion.</p>
+    </footer>
+
 </body>
 </html>
